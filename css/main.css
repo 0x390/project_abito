@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto", sans-serif; /* Шрифт Roboto от Google fonts */
+  font-size: 14px; /* Размер шрифта */
+  color: #0a143a; /* Цвет текста */
+}
+
+.header {
+  max-width: 1146px; /* Максимальная ширина */
+  margin: auto; /* Автоматическое выравнивание по середине */
+  padding-top: 30px; /* Края отступа сверху 30px */
+}
+
+.navbar {
+  display: flex; /* Делаем гибкий блок */
+  align-items: center; /* Выравниваем по вертикали по центру */
+  justify-content: space-between; /* разброс элементов по краям */
+  margin-bottom: 24px;
+}
+
+.navbar-menu {
+  margin-right: auto; /* Автоматический отступ справа */
+}
+
+.menu {
+  list-style: none; /* Отключаем точки в списке */
+  margin: 0; /* Обнуляем отступы */
+  padding-left: 22px; /* Внутренний отступ слева */
+  padding-right: 22px; /* Внутренний отступ справа */
+  display: flex; /* Делаем гибкий блок */
+}
+
+/* Для всех пунктов меню кроме последнего */
+.menu-item:not(:last-child) {
+  margin-right: 14px; /* Отступ справа 14 пикселей */
+}
+
+.menu-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: inherit; /* Берем цвет текста родителя */
+}
+
+.button {
+  text-decoration: none; /* Отключаем подчеркивание */
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.button-link {
+  color: inherit; /* Берем цвет текста родителя */
+}
+
+.button-primary {
+  background: #256eeb; /* Фон */
+  border-radius: 5px; /* Скругление углов */
+  color: white; /* Цвет текста */
+}
+
+.search-panel {
+  height: 50px; /* Высота */
+  background: #256eeb; /* Фон */
+  border-radius: 5px; /* Скругление углов */
+  display: flex; /* Делаем гибкий блок */
+  padding: 3px; /* Отступ по краям 30px*/
+}
+
+.search-input {
+  flex-grow: 1; /* Расстягивание на все свободное место */
+  background: #ffffff; /* Фон */
+  border-radius: 5px; /* Скругление углов */
+  border: none; /* Отключаем обводку */
+  padding-left: 22px; /* Внутренний отступ слева */
+  padding-right: 22px; /* Внутренний отступ справа */
+}
+
+.search-input:active,
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  background: #256eeb; /* Цвет фона */
+  border: none; /* Отключаем обводку */
+  color: white; /* Цвет текста */
+  padding-left: 20px;
+  padding-right: 17px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.05, 0.66, 0.42, 1.38);
+}
+
+.search-button:hover,
+.search-button:active {
+  font-size: 17px;
+}
+
+.search-button:active,
+.search-button:focus {
+  outline: none;
+}
+
+.search-button-text {
+  margin-left: 5px;
+}
