@@ -4,10 +4,15 @@ body {
   color: #0a143a; /* Цвет текста */
 }
 
-.header {
+.container {
   max-width: 1146px; /* Максимальная ширина */
   margin: auto; /* Автоматическое выравнивание по середине */
+}
+
+.header {
   padding-top: 30px; /* Края отступа сверху 30px */
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .navbar {
@@ -101,4 +106,124 @@ body {
 
 .search-button-text {
   margin-left: 5px;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256eeb;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  width: 223px;
+  word-wrap: break-word;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.title-text {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  color: #0a143a;
+}
+
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.service {
+  margin-bottom: 25px;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
 }
