@@ -144,6 +144,10 @@ body {
   word-wrap: break-word;
 }
 
+.card-title:hover {
+  color: red;
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
